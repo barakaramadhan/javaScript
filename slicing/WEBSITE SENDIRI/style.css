@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+#hero{
+  
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+    height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#navigasi {
+  position: sticky;
+  top: 0px;
+
+  /* background-color: #6A9C89; */
+  /* margin-left: 500px;
+    margin-right: 500px; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  z-index: 9;
+}
+
+.container-navigasi {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#navigasi .dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  background-color: white;
+  top: 100%;
+  border-radius: 10px;
+  padding-left: 0;
+}
+.dropdown-menu li {
+  margin-left: 0 !important;
+}
+.dropdown-menu a {
+  color: grey;
+  width: 150px;
+  display: block;
+  text-decoration: none;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a:hover {
+
+  color: #F3C623;
+}
+
+.list-navigasi {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  font-size: 20px;
+  height: 20px;
+}
+.list-navigasi button{
+    text-decoration: none;
+    background-color: #F3C623;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-family: "Comic Neue", cursive;
+  font-weight: 700;
+    
+}
+.list-navigasi li {
+  list-style: none;
+  margin-left: 0;
+  color: white;
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+}
+
+.list-navigasi li:hover{
+    color: #F3C623;
+    text-decoration: underline;
+}
