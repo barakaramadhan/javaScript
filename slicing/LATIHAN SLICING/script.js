@@ -6,5 +6,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-alert("Assala/mu'alaikum");
+alert("Assalamu'alaikum");
 alert(3 + 2);
