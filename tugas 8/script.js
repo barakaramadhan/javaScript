@@ -13,6 +13,7 @@ else if (susulanUjianAndi >=71){
 }
 else{
     console.log('GRADE D');
+    
 }
 
 //MISI 2
