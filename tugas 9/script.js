@@ -30,7 +30,7 @@ let isLoggin = false;
 if (!isLoggin) {
     console.log('ANDA SUDAH LOGIN');
 }
-els{
+else{
     console.log('ANDA BELUM LOGIN');
     
 }
