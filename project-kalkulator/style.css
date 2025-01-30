@@ -1,3 +1,4 @@
+/* Mengatur layout halaman */
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -5,52 +6,95 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f3f3f3;
+  background-color: #f4f4f9;
 }
+
+/* Menata kalkulator */
 .calculator {
-  background: #fff;
-  padding: 20px;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
 }
+
+/* Menata tampilan layar kalkulator */
 .display {
-  width: 100%;
-  height: 50px;
-  font-size: 1.5em;
-  text-align: right;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.buttons {
-  display: grid; 
-  gap: 10px;
-}
-button {
-  padding: 15px;
-  font-size: 1.2em;
-  border: none;
-  border-radius: 5px;
-  /* cursor: pointer; */
-  background-color: #f0f0f0;
-  transition: background-color 0.3s;
-}
-button:hover {
-  background-color: #d9d9d9;
-}
-button.operation {
-  background-color: #f9a825;
+  background-color: #222;
   color: #fff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  min-height: 60px;
+  word-wrap: break-word;
 }
+
+/* Menata tombol kalkulator */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Membuat grid dengan 4 kolom */
+  grid-gap: 10px;
+  margin-bottom: 10px; /* Menghilangkan ruang kosong di bawah tombol */
+}
+
+/* Desain tombol kalkulator */
+button {
+  background-color: #f0f0f0;
+  font-size: 1.2rem;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+  background-color: #ddd;
+}
+
+/* Desain tombol operasi */
+button.operation {
+  background-color: #fbc02d;
+  color: white;
+}
+
 button.operation:hover {
-  background-color: #f57f17;
+  background-color: #f9a825;
 }
+
+/* Desain tombol untuk angka */
 button.equal {
   background-color: #4caf50;
-  color: #fff;
+  color: white;
+  grid-column: span 1; /* Tombol = hanya menggunakan satu kolom */
 }
+
 button.equal:hover {
-  background-color: #388e3c;
+  background-color: #45a049;
+}
+
+/* Tombol Clear (C) */
+button#clearDisplay {
+  background-color: #e57373;
+  color: white;
+}
+
+button#clearDisplay:hover {
+  background-color: #ef5350;
+}
+
+/* Tombol Backspace (hapus) */
+button#backspace {
+  background-color: #90caf9;
+  color: white;
+  grid-column: span 1; /* Tombol backspace menggunakan satu kolom */
+}
+
+button#backspace:hover {
+  background-color: #64b5f6;
 }

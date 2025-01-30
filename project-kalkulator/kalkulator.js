@@ -1,120 +1,126 @@
 // NUMBER DI CALCULATOR
-function numberOne() {
+function numberOne(numberOne) {
   let getElement = document.getElementById("display").innerHTML;
 
   if (getElement == 0) {
     getElement = "";
   }
 
-  let total = getElement + 1;
+  let total = getElement + numberOne;
   document.getElementById("display").innerHTML = total;
 }
+function numberNol(numberNol) {
+  let getElement = document.getElementById("display").innerHTML;
 
-function numberTwo() {
+  let total = getElement + numberNol;
+  document.getElementById("display").innerHTML = total;
+}
+  
+function numberTwo(numberTwo) {
   let getElement = document.getElementById("display").innerHTML;
 
   if ((getElement == 0)) {
     getElement = "";
   }
 
-  let total = getElement + 2;
+  let total = getElement + numberTwo;
   document.getElementById("display").innerHTML = total;
 }
 
-function numberThree() {
+function numberThree(numberThree) {
   let getElement = document.getElementById("display").innerHTML;
 
   if ((getElement == 0)) {
     getElement = "";
   }
 
-  let total = getElement + 3;
+  let total = getElement + numberThree;
   document.getElementById("display").innerHTML = total;
 }
-function numberFour() {
+function numberFour(numberFour) {
   let getElement = document.getElementById("display").innerHTML;
 
   if ((getElement == 0)) {
     getElement = "";
   }
 
-  let total = getElement + 4;
+  let total = getElement + numberFour;
   document.getElementById("display").innerHTML = total;
 }
-function numberFive() {
+function numberFive(numberFive) {
   let getElement = document.getElementById("display").innerHTML;
 
   if ((getElement == 0)) {
     getElement = "";
   }
 
-  let total = getElement + 5;
+  let total = getElement + numberFive;
   document.getElementById("display").innerHTML = total;
 }
-function numberSix() {
+function numberSix(numberSix) {
   let getElement = document.getElementById("display").innerHTML;
 
   if ((getElement == 0)) {
     getElement = "";
   }
 
-  let total = getElement + 6;
+  let total = getElement + numberSix;
   document.getElementById("display").innerHTML = total;
 }
-function numberSeven() {
+function numberSeven(numberSeven) {
   let getElement = document.getElementById("display").innerHTML;
 
   if ((getElement == 0)) {
     getElement = "";
   }
 
-  let total = getElement + 7;
+  let total = getElement + numberSeven;
   document.getElementById("display").innerHTML = total;
 }
-function numberEight() {
+function numberEight(numberEight) {
   let getElement = document.getElementById("display").innerHTML;
 
   if ((getElement == 0)) {
     getElement = "";
   }
 
-  let total = getElement + 8;
+  let total = getElement + numberEight;
   document.getElementById("display").innerHTML = total;
 }
-function numberNine() {
+function numberNine(numberNine) {
   let getElement = document.getElementById("display").innerHTML;
 
   if ((getElement = 0)) {
     getElement = "";
   }
 
-  let total = getElement + 9;
+  let total = getElement + numberNine;
   document.getElementById("display").innerHTML = total;
 }
 
-function pertambahan() {
+function pertambahan(pertambahan) {
   let getElement = document.getElementById("display").innerHTML;
-  let total = getElement + " + ";
+  let total = getElement + pertambahan;
   document.getElementById("display").innerHTML = total;
 }
 
-function pengurangan() {
+function pengurangan(pengurangan) {
   let getElement = document.getElementById("display").innerHTML;
-  let total = getElement + " - ";
+  let total = getElement + pengurangan;
   document.getElementById("display").innerHTML = total;
 }
-function perkalian() {
+function perkalian(perkalian) {
   let getElement = document.getElementById("display").innerHTML;
-  let total = getElement + " x ";
+  let total = getElement +  perkalian;
   document.getElementById("display").innerHTML = total;
 }
-function pembagian() {
+function pembagian(pembagian) {
   let getElement = document.getElementById("display").innerHTML;
-  let total = getElement + " / ";
+  let total = getElement + pembagian;
   document.getElementById("display").innerHTML = total;
 }
 
-function calculateResult() {
+function calculateResult(hasil) { // hasil dari penjumlahan
   let getElement = document.getElementById("display").innerHTML;
   console.log(getElement);
 
@@ -160,4 +166,19 @@ function calculateResult() {
 
     document.getElementById("display").innerHTML = total;
   }
+}
+
+function clearDisplay(){
+  let num1 = document.getElementById('display').innerHTML;
+
+  numbers = 0;// hapus 1 karakter dari kanan
+
+  document.getElementById('display').innerText = numbers;
+}
+function backspace(){
+  let num1 = document.getElementById('display').innerHTML;
+
+  numbers = num1.trim().slice( 0,-1);
+
+  document.getElementById('display').innerText = numbers;
 }
