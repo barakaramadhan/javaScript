@@ -90,7 +90,7 @@ button#clearDisplay:hover {
 
 /* Tombol Backspace (hapus) */
 button#backspace {
-  background-color: #90caf9;
+  background-color: #f9a825;
   color: white;
   grid-column: span 1; /* Tombol backspace menggunakan satu kolom */
 }
