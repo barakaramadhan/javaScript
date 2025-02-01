@@ -65,6 +65,11 @@ img:hover {
     align-items: center;
     margin-top: 100px;
 }
+
+.banner-text:hover{
+    background-color: #e89128;
+}
+
 .banner-text{
     border-radius: 70px 5px 0px 0px;
     background-color: #e07b00;
@@ -81,3 +86,19 @@ img:hover {
     font-weight: 100;
 }
 
+.banner-text button{
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    color: white;
+    font-family: "Cabin", serif;
+    background: none; /* Menghapus semua background */
+    background-color: transparent; /* Membuat background transparan */
+}
+
+.banner-text button:hover{
+    border: solid white 2px;
+    color: black;
+    font-weight: bold;
+}
