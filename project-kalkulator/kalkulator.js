@@ -155,6 +155,7 @@ function calculateResult(hasil) { // hasil dari penjumlahan
     console.log(total);
 
     document.getElementById("display").innerHTML = total;
+    
   } else if (getElement.includes("/")) {
     let parts = getElement.trim().split("/");
     console.log(parts);

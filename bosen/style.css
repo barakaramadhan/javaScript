@@ -67,13 +67,17 @@ img:hover {
 }
 
 .banner-text:hover{
-    background-color: #e89128;
+    background-color: #ff9f29; /* Warna latar belakang saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih besar */
+    transform: scale(1.05); /* Membesarkan kontainer saat hover */
 }
 
 .banner-text{
     border-radius: 70px 5px 0px 0px;
     background-color: #e07b00;
     padding: 20px 150px 20px 150px;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 .banner-text h3{
     font-size: 20px;
@@ -87,18 +91,21 @@ img:hover {
 }
 
 .banner-text button{
-    border: solid black 2px;
+    margin-top: 30px;
+    border: none;
+    background-color: #16404D;
     border-radius: 10px;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 30px 15px 30px;
     font-size: 20px;
     color: white;
     font-family: "Cabin", serif;
-    background: none; /* Menghapus semua background */
-    background-color: transparent; /* Membuat background transparan */
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .banner-text button:hover{
-    border: solid white 2px;
-    color: black;
-    font-weight: bold;
+    background-color: #235c6e;
+    color: rgb(247, 247, 247);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih besar */
+    transform: scale(1.05); 
 }
