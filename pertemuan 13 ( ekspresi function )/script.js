@@ -21,23 +21,23 @@ pondok2();
 
 // Callback function
 // alert(" Ini adalah alert")
-// let isBoss = confirm(" apakah kamu adalah bos?");
-// alert(isBoss);
+let isBoss = confirm(" apakah kamu adalah bos?");
+alert(isBoss);
 
-// function pertanyaan(penanya, yes, tidak){
-//     if (confirm(penanya)) {
-//         ya();
-//     }else{
-//         tidak();
-//     }
-// }
-// function tampilya(){
-//     alert("ya saya santri")
-// }
-// function tampiltidak(){
-//     alert("saya bukan santri")
-// }
-// pertanyaan(" apakah kamu adalah santri?", tampilya, tampiltidak);
+function pertanyaan(penanya, yes, tidak){
+    if (confirm(penanya)) {
+        ya();
+    }else{
+        tidak();
+    }
+}
+function tampilya(){
+    alert("ya saya santri")
+}
+function tampiltidak(){
+    alert("saya bukan santri")
+}
+pertanyaan(" apakah kamu adalah santri?", tampilya, tampiltidak);
 
 
 //  expresi function VS deklaration function
