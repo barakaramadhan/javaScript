@@ -1,13 +1,15 @@
-function calculateArea(length, width) {
- return length * width;
-}
+// function calculateArea(length, width) {
+//  return length * width;
+// }
 
 // TUGAS 1
-let calculateArea = function (length, width) {
+let expression = function (length, width) {
     return length * width;
 }
+  console.log(expression(10, 5));
 
 // TUGAS 2
-let calculateArea = (length, width) => {
+let arrow = (length, width) => {
     return length * width;
 }
+  console.log(arrow(10, 5));
