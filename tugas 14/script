@@ -1,0 +1,17 @@
+// function calculateArea(length, width) {
+//  return length * width;
+// }
+
+// TUGAS 1
+let calculateArea = function(length, width) {
+    console.log('Expretion Function');
+    
+};
+calculateArea();
+
+// TUGAS 2
+let arrowName = function(length, width) {
+    console.log('Arrow Function');
+    
+};
+arrowName();
